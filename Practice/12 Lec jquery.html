@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 Lec jquery (04-03-23)</title>
+
+ 
+    <!-- jquery cdn link :- -->
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
+</head>
+<body>
+
+    <h1>Welcome to jquery</h1>
+    <h2 class="dk">Hello jquery.</h2>
+    <h2 id="vk">jquery programming.</h2>
+
+
+    <p class="para">1. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p class="para">2. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p class="para">3. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p>4. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+
+    <button id="btn">Click on</button>
+
+</body>
+</html>
+
+
+<script>
+
+    // * jquery Selector :-
+
+       // (1) Class.
+       // (2) Id.
+       // (3) Element.
+       // (4) Universal.
+       
+ 
+
+
+    // $("selector").function
+
+    // $(document).ready(function()
+    // {
+    //     // alert ('Hello World');
+    //     alert ("Hello Jquery");
+        //    alert (`Hyy jquery`);
+    // });
+
+
+    // $('h1').ready(function()
+    // {
+    //     alert('Hyy jquary');
+    //     console.log('welcome to jquery');
+    // });
+
+
+
+
+
+
+         // (1) Element Selector :-
+
+        // $(`h1`).css(`color`,`red`);
+        $('h1').css('color','blue');
+        // $("h1").css("color","teal");
+
+
+
+        // (2) Class Selector :-
+
+        $(".dk").css("color","red");
+
+
+
+        // (3) Id Selector :-
+
+        $("#vk").css("color","black");
+        // $("#vk").css("padding","30px 20px 30px 700px");
+        // $("#vk").css("text-align","center");
+        // $("#vk").css("margin","50px 20px 50px 100px");
+
+
+
+        // (4) Universal Selector :-
+
+        // $("*").css("color","orange");
+
+
+
+
+        // Hide function :-
+
+        // $("p").hide();
+
+        jQuery("p").css("color","red");
+
+        // $(".para").hide();
+
+
+
+
+        // Button Hide :-
+
+        $("#btn").css("color","red");
+        $("#btn").css("background","black");
+        $("#btn").css("padding","10px 40px 10px 40px");
+        $("#btn").css("font-size","20px");
+        $("#btn").css("margin","20px 50px 30px 80px");
+
+
+        // $("#btn").click(function(){
+        //     $(".para").hide();                                                  // paragraph Hide.
+        // });
+
+
+        // $("#btn").click(function(){
+        //     $(this).hide();                                                     // Button Hide. (this).
+        // })
+
+
+
+        // $("#btn").click(function(){
+        //     $("p").slideUp();
+        // });
+
+        $("#btn").click(function(){
+            $("p").slideDown();
+        });
+
+</script>
+
