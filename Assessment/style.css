@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    height: 99.3vh;
+    width: 100%;
+    position: relative;
+}
+
+img {
+    height: inherit;
+    width: 100%;
+}
+
+#one,
+#two,
+#three,
+#four {
+    position: absolute;
+    background-color: red;
+    bottom: 0.5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#one:hover,
+#two:hover,
+#three:hover,
+#four:hover {
+    background-color: blue;
+}
+
+#one {
+    left: 45%;
+    margin-left: -30px;
+}
+
+#two {
+    left: 50%;
+    margin-left: -30px;
+}
+
+#three {
+    left: 55%;
+    margin-left: -30px;
+}
+#four{
+    left: 88%;
+    margin-left: -30%;
+}
